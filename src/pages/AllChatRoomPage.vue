@@ -84,7 +84,7 @@ const joinRoom = async (id) => {
   // fD.append("id", userid);
   // fD.append("category", category.value);
 
-  const wsEndpoint = `ws://branch-task-backend.up.railway.app/api/v1/ws/joinRoom/${id}/${adminid}/${username}`
+  const wsEndpoint = `wss://branch-task-backend.up.railway.app/api/v1/ws/joinRoom/${id}/${adminid}/${username}`
   // const wsEndpoint = `ws://localhost:3000/api/v1/ws/joinRoom/${id}/${adminid}/${username}`
       // const wsEndpoint = `${ws}/ws/joinRoom/${id}/${userid}/${username}`
       const ws_ = new WebSocket(wsEndpoint)

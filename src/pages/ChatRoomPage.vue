@@ -109,7 +109,7 @@ const onReset = () => {
 }
 
 const onWs = (id) => {
-  const wsEndpoint = `ws://branch-task-backend.up.railway.app/api/v1/ws/joinRoom/${id}/${userid}/${username}`
+  const wsEndpoint = `wss://branch-task-backend.up.railway.app/api/v1/ws/joinRoom/${id}/${userid}/${username}`
   // const wsEndpoint = `ws://localhost:3000/api/v1/ws/joinRoom/${id}/${userid}/${username}`
   // const wsEndpoint = `${ws}/ws/joinRoom/${id}/${userid}/${username}`
   const ws_ = new WebSocket(wsEndpoint)
